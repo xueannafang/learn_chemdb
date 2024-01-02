@@ -56,7 +56,8 @@ class Atom(object):
         mutate will change the current element to a new one
         before doing so, the operation needs to be validated in terms of the free positions of the new atom based on current bonding case
         """
-        if self.free_position == 0:
+        new_val = all_atom_info[new_elt][0]
+        if self.nbonds > new_val:
             raise InvalidBond("The number of bonds will exceed the valence number.")
         self.element = new_elt #if error not raised, mutate the current element with the new element
     
@@ -219,7 +220,7 @@ class Molecule(object):
         atom.mutate(elt)
     
     
-    def add(self, adds):
+    def add(self, *adds):
         """
         add atom at given carbon idx at branch idx
         """
@@ -238,7 +239,7 @@ class Molecule(object):
         added_atom = self._add_atom(elt)
         self.set_bond(atom, added_atom)
     
-    def add_chaining(self, nc, nb, elts):
+    def add_chaining(self, nc, nb, *elts):
         """
         create a chain at given carbon index and branch index, with a seris of elements
         """
