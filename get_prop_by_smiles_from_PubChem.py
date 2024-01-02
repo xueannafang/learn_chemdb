@@ -53,7 +53,7 @@ def get_prop_by_smiles(sm, prolog, all_prop):
     cid = get_cid_by_smiles(sm, prolog).rstrip() #note that the cid text has whitespace in the end
     prop_url = form_prop_url(cid, prolog, all_prop)
     print(prop_url)
-    prop_res = requests.get(prop_url)
+    prop_res = requests.get(prop_url) #note there's a limit of 5 requests per second, if looping over the property/compound list, a sleep function is required
     prop_res_text = prop_res.text
     print(prop_res_text)
     prop_dict = prop_t2dict(prop_res_text)
