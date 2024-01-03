@@ -12,7 +12,7 @@ This is a great practice to better understand how computer represent molecules a
 
 Key functions and how to use:
 
-'''
+```
 your_molecule= Molecule("YourMoleculeName")
 
 #Add branch of carbon length x, y, z, ... at backbone index (based on its sequence, all are 1-indexed)
@@ -48,4 +48,4 @@ your_molecule.atoms
 #get the name of this molecule
 your_molecule.name
 
-'''
+```
