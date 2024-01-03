@@ -1,6 +1,6 @@
 # learn_chemdb
 
-Some expedition in cheminformatics!
+Some exploration in cheminformatics!
 
 ## File explanation
 
