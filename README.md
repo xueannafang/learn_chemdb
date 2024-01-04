@@ -61,6 +61,9 @@ This is a practice that first covert the given smiles string to CID, followed by
 This is the general version to understand how PUG-REST works. The URL is chuncked into specific searchby criteria (pugin_pre, pugin_searchby), operation (pugoper_pre) and allows multiple search to go by looping over compounds to search (all_comp_to_search) and properties (all_prop_to_search). The test example defined a function to generate simple alkanes by setting the carbon number (gen_comp_by_rule). Each request waits for 1 second that can be modified down to no less than 0.2s per entry (i.e., no more than 5 requests per second) to abide the PubChem using policy. (Sleep is important!!!)
 
 
+- [Other practices](https://github.com/xueannafang/learn_chemdb/tree/main/practice_from_cheminfo_with_filled_notebook)
+
+Some exercises along learning... covering operations in chemistry databases, read and write structural data files (lec_1, lec_2), search mixtures that contains multiple target compounds (lec_3), standardisation and structural extraction (lec_4), (the following are on the TD list), structural search, similarity, QSPR in practice and some machine learning.. NOTE THAT ALL THESE EXERCISES ARE ORIGINALLY FROM CHEMLIBRETEXTS.
 
 
 # References
