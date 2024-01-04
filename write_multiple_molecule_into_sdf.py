@@ -1,10 +1,11 @@
 #This is part of the exercises to understand the difference between compounds and substances
 #Same compound can have different substances version (indexed by SIDs)
+#ref lec_4
 
 #Step 1: get all substances with the same CID: 1174
 import requests
 import time
-cid = 1174
+cid = 1174 #which is uracil, exp output saved in cid2sids-uracil.sdf
 prolog = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/"
 
 url = prolog + str(cid) + "sids/txt" #to get all sids with the same cid, formatting as txt
