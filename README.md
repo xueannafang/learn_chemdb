@@ -62,7 +62,7 @@ This is the general version to understand how PUG-REST works. The URL is chuncke
 
 - [search_mix_with_same_comp.py](https://github.com/xueannafang/learn_chemdb/blob/main/search_mix_with_same_comp.py)
 
-This part can search mixtures that contains multiple compounds of interests.
+This part can search mixtures that contains multiple compounds of interests. For example, in certain cases we need to find compound mixtures with specific (useful) ingredients (I would call it..). The key step is to add "?cids_type=component" after the pugout block.
 
 
 - [Other practices](https://github.com/xueannafang/learn_chemdb/tree/main/practice_from_cheminfo_with_filled_notebook)
