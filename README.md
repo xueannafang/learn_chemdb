@@ -2,6 +2,8 @@
 
 This is my other holiday playground for some exploration in cheminformatics!
 
+Below are some selection that I found useful and intersting during study :D
+
 ## File explanation
 
 - [codewar_full_chem.py](https://github.com/xueannafang/learn_chemdb/blob/main/codewar_full_chem.py)
