@@ -1,6 +1,6 @@
 # learn_chemdb
 
-Some exploration in cheminformatics!
+This is my other holiday playground for some exploration in cheminformatics!
 
 ## File explanation
 
@@ -49,3 +49,24 @@ your_molecule.atoms
 your_molecule.name
 
 ```
+
+- [get_prop_by_smiles_from_PubChem.py](https://github.com/xueannafang/learn_chemdb/blob/main/get_prop_by_smiles_from_PubChem.py)
+
+This is a practice that first covert the given smiles string to CID, followed by searching a given list of properties. Note that properties are joined in one single request for this case and should not be too long (less than 50, ref [here](https://chem.libretexts.org/Courses/Intercollegiate_Courses/Cheminformatics/01%3A_Introduction/1.10%3A_Python_Assignment_1) for required splitting on input request.)
+
+
+
+- [get_properties_by_smiles_from_pubchem_searchby_general.py](https://github.com/xueannafang/learn_chemdb/blob/main/get_properties_by_smiles_from_pubchem_searchby_general.py)
+
+This is the general version to understand how PUG-REST works. The URL is chuncked into specific searchby criteria (pugin_pre, pugin_searchby), operation (pugoper_pre) and allows multiple search to go by looping over compounds to search (all_comp_to_search) and properties (all_prop_to_search). The test example defined a function to generate simple alkanes by setting the carbon number (gen_comp_by_rule). Each request waits for 1 second that can be modified down to no less than 0.2s per entry (i.e., no more than 5 requests per second) to abide the PubChem using policy. (Sleep is important!!!)
+
+
+
+
+# References
+
+Everything in this playground is some practice and reflection based on the training provided by:
+
+- [Codewars](https://www.codewars.com/)
+- [ChemLibreTexts ChemInformatics](https://chem.libretexts.org/Courses/Intercollegiate_Courses/Cheminformatics)
+
