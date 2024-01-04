@@ -1,6 +1,6 @@
 # learn_chemdb
 
-This is my other holiday playground for some exploration in cheminformatics!
+This is my playground for some exploration in cheminformatics!
 
 Below are some selection that I found useful and intersting during study :D
 
@@ -37,7 +37,7 @@ suppl = Chem.SDMolSupplier(sdf_file_name)
 
 ```
 
-Further operation can be done based on ```suppl``.
+Further operation can be done based on ```suppl```.
 
 
 - [Other practices](https://github.com/xueannafang/learn_chemdb/tree/main/practice_from_cheminfo_with_filled_notebook)
