@@ -40,6 +40,11 @@ suppl = Chem.SDMolSupplier(sdf_file_name)
 Further operation can be done based on ```suppl```.
 
 
+- [Deal_with_missing_structural_data.py](https://github.com/xueannafang/learn_chemdb/blob/main/deal_with_missing_structural_data.py)
+
+In the case when structural data is missing, which we would get an empty smiles string, this can find the auto_structure information from the sdf based on the substance id.
+
+
 - [Other practices](https://github.com/xueannafang/learn_chemdb/tree/main/practice_from_cheminfo_with_filled_notebook)
 
 Some exercises along learning... covering operations in chemistry databases, read and write structural data files (lec_1, lec_2), search mixtures that contains multiple target compounds (lec_3), standardisation and structural extraction (lec_4), (the following are on the TD list), structural search, similarity, QSPR in practice and some machine learning.. NOTE THAT ALL THESE EXERCISES ARE ORIGINALLY FROM CHEMLIBRETEXTS.
