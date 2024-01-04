@@ -21,7 +21,11 @@ This is the general version to understand how PUG-REST works. The URL is chunked
 
 This part can search mixtures that contains multiple compounds of interests. For example, in certain cases we need to find compound mixtures with specific (useful) ingredients (I would call it..). The key step is to add "?cids_type=component" after the pugout block.
 
--[write_multiple_molecule_into_sdf.py](https://github.com/xueannafang/learn_chemdb/blob/main/write_multiple_molecule_into_sdf.py)
+- [write_multiple_molecule_into_sdf.py](https://github.com/xueannafang/learn_chemdb/blob/main/write_multiple_molecule_into_sdf.py)
+
+This is part of the exercises to understand the difference between "compound" and "substance". One compound can have multiple substances matching. The side job is to learn how to write structural information of multiple molecules into one sdf file. The process is to first get all SIDs based on the given CID, followed by chunking all SIDs into blocks of no more than 50 entries. Finally, request sdf for each entry and write into our target combined sdf file (named after "cid2sids_cid_#.sdf"). Some other operations can be done based on the as-generated multi-entry sdf file..
+
+Expected outcome is stored [here](https://github.com/xueannafang/learn_chemdb/blob/main/practice_from_cheminfo_with_filled_notebook/lec_4/cid2sids-uracil.sdf).
 
 
 - [Other practices](https://github.com/xueannafang/learn_chemdb/tree/main/practice_from_cheminfo_with_filled_notebook)
