@@ -19,7 +19,7 @@ This is the general version to understand how PUG-REST works. The URL is chunked
 
 - [search_mix_with_same_comp.py](https://github.com/xueannafang/learn_chemdb/blob/main/search_mix_with_same_comp.py)
 
-This part can search mixtures that contains multiple compounds of interests. For example, in certain cases we need to find compound mixtures with specific (useful) ingredients (I would call it..). The key step is to add "?cids_type=component" after the pugout block.
+This part can search mixtures that contains multiple compounds of interests. For example, in certain cases we need to find compound mixtures with specific (useful) ingredients. The key step is to add ```?cids_type=component``` after the pugout block.
 
 - [write_multiple_molecule_into_sdf.py](https://github.com/xueannafang/learn_chemdb/blob/main/write_multiple_molecule_into_sdf.py)
 
@@ -48,6 +48,10 @@ In the case when structural data is missing, which we would get an empty smiles 
 - [draw_mol_by_smiles.py](https://github.com/xueannafang/learn_chemdb/blob/main/draw_mol_by_smiles.ipynb)
 
 Based on a given list of smiles (that could contain empty string), plot the chemical scheme in a batch.
+
+-[identical_property_search.ipynb](https://github.com/xueannafang/learn_chemdb/blob/main/identical_property_search.ipynb)
+
+Search for compounds with same features, such as connectivity. Important step is to add ```fast##``` (keyword) in the pugin block, and ```?identity_type=``` plus the corresponding type of identity search in the pugout part.
 
 - [Other practices](https://github.com/xueannafang/learn_chemdb/tree/main/practice_from_cheminfo_with_filled_notebook)
 
