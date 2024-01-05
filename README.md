@@ -2,9 +2,9 @@
 
 This is my playground for some exploration in cheminformatics!
 
-Below are some selection that I found useful and intersting during study :D
+Below are some selection that I found useful and intersting during study.
 
-## File explanation
+## File explanation (the learning diary)
 
 
 - [get_prop_by_smiles_from_PubChem.py](https://github.com/xueannafang/learn_chemdb/blob/main/get_prop_by_smiles_from_PubChem.py)
@@ -49,9 +49,14 @@ In the case when structural data is missing, which we would get an empty smiles 
 
 Based on a given list of smiles (that could contain empty string), plot the chemical scheme in a batch.
 
--[identical_property_search.ipynb](https://github.com/xueannafang/learn_chemdb/blob/main/identical_property_search.ipynb)
+- [identical_property_search.ipynb](https://github.com/xueannafang/learn_chemdb/blob/main/identical_property_search.ipynb)
 
 Search for compounds with same features, such as connectivity. Important step is to add ```fast##``` (keyword) in the pugin block, and ```?identity_type=``` plus the corresponding type of identity search in the pugout part.
+
+- [structural_similarity.ipynb](https://github.com/xueannafang/learn_chemdb/blob/main/structural_similarity.ipynb)
+
+Search for compounds with 2D similarity over given threshold or 3D similarity higher than default settings. 
+
 
 - [Other practices](https://github.com/xueannafang/learn_chemdb/tree/main/practice_from_cheminfo_with_filled_notebook)
 
