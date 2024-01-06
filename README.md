@@ -57,10 +57,19 @@ Search for compounds with same features, such as connectivity. Important step is
 
 Search for compounds with 2D similarity over given threshold or 3D similarity higher than default settings. 
 
+- [Fingerprints](https://github.com/xueannafang/learn_chemdb/blob/main/structural_similarity.ipynb)
 
-- [Other practices](https://github.com/xueannafang/learn_chemdb/tree/main/practice_from_cheminfo_with_filled_notebook)
+Understand how molecular structures are hashed via different pathway. When comparing two structures, using fingerprints (a bit vector) can significantly help with the efficiency of matching. Important concepts are:
 
-Some exercises along learning... covering operations in chemistry databases, read and write structural data files (lec_1, lec_2), search mixtures that contains multiple target compounds (lec_3), standardisation and structural extraction (lec_4), (the following are on the TD list), structural search, similarity, QSPR in practice and some machine learning.. NOTE THAT ALL THESE EXERCISES ARE ORIGINALLY FROM CHEMLIBRETEXTS.
+ MACCSKeys - a 166 bit vector with each position representing the existence of a specific chemical feature, such as is_aromatic, is_a_ring, 3_membered_ring, contains_atom_number_x, contain_substructure_a, etc.
+ 
+ MorganFingerprint - based on radius from heavy atoms; analogous to the extended-connectivity fingerprint - ECFP and Funtional-Class Fingerprints - FCFP, whose followed number reflects the diameter instead of radius. These three are all "circular fingerprints"..... tbc
+
+ Why FPs are useful?
+
+ Despite the same FP might still match some variations of structures, if the FP between two molecules are already different, they are for sure different, and therefore no need to look at deeper level of structural data.
+
+
 
 ---------------
 
