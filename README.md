@@ -57,7 +57,7 @@ Search for compounds with same features, such as connectivity. Important step is
 
 Search for compounds with 2D similarity over given threshold or 3D similarity higher than default settings. 
 
-- [Fingerprints](https://github.com/xueannafang/learn_chemdb/blob/main/structural_similarity.ipynb)
+- [Fingerprints](https://github.com/xueannafang/learn_chemdb/blob/main/fingerprint.ipynb)
 
 Understand how molecular structures are hashed via different pathway. When comparing two structures, using fingerprints (a bit vector) can significantly help with the efficiency of matching. Important concepts are:
 
