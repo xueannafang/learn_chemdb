@@ -71,7 +71,7 @@ Understand how molecular structures are hashed via different pathway. When compa
 
  Why FPs are useful? Despite the same FP might still match some variations of structures, if the FP between two molecules are already different, they are for sure different, and therefore no need to look at deeper level of structural data.
 
-To compare similarity, ```DataStructs``` from ```rdkit``` is required. The default is Tanimoto similarity (but not the only option). The similarity ranges from 0 (different) to 1 (same). 
+To compare similarity, ```DataStructs``` from ```rdkit``` is required. The default is Tanimoto similarity (but not the only option). The similarity ranges from 0 (different) to 1 (same). Important threshold: 0.85 (above which is similar, below which is not similar).
 
 ```
 sim_score = DataStructs.FingerprintSimilarity(fp1, fp2)
