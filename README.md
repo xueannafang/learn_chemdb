@@ -62,14 +62,20 @@ Search for compounds with 2D similarity over given threshold or 3D similarity hi
 Understand how molecular structures are hashed via different pathway. When comparing two structures, using fingerprints (a bit vector) can significantly help with the efficiency of matching. Important concepts are:
 
  MACCSKeys - a 166 bit vector with each position representing the existence of a specific chemical feature, such as is_aromatic, is_a_ring, 3_membered_ring, contains_atom_number_x, contain_substructure_a, etc.
+
+ PubChem Fingerprints - a 881 bit fp, similar to MACCS keys. Each digit corresponds to a chemical feature that can be found [here](https://web.cse.ohio-state.edu/~zhang.10631/bak/drugreposition/list_fingerprints.pdf). The data structure needs to be converted to bit vector (from base64 code).  
  
- MorganFingerprint - based on radius from heavy atoms; analogous to the extended-connectivity fingerprint - ECFP and Funtional-Class Fingerprints - FCFP, whose followed number reflects the diameter instead of radius. These three are all "circular fingerprints"..... tbc
+ MorganFingerprint - based on radius from heavy atoms; analogous to the extended-connectivity fingerprint - ECFP and Funtional-Class Fingerprints - FCFP, whose followed number reflects the diameter instead of radius. These three are all "circular fingerprints".
 
- Why FPs are useful?
+ RDKFingerprint - based on topological features, iterating through a given length of "path" (number of bonds).
 
- Despite the same FP might still match some variations of structures, if the FP between two molecules are already different, they are for sure different, and therefore no need to look at deeper level of structural data.
+ Why FPs are useful? Despite the same FP might still match some variations of structures, if the FP between two molecules are already different, they are for sure different, and therefore no need to look at deeper level of structural data.
 
+To compare similarity, ```DataStructs``` from ```rdkit``` is required. The default is Tanimoto similarity (but not the only option). The similarity ranges from 0 (different) to 1 (same). 
 
+```
+sim_score = DataStructs.FingerprintSimilarity(fp1, fp2)
+```
 
 ---------------
 
